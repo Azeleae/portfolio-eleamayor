@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation - Éléa Mayor</title>
+    <link rel="stylesheet" href="presentation.css">
+</head>
+<body class="light-mode scroll-locked">
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="home-icon" aria-label="Accueil">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html#contact" data-fr="Contact" data-en="Contact">Contact</a>
+            <span>•</span>
+            <a href="presentation.html" data-fr="Présentation" data-en="About" class="active-link">Présentation</a>
+            <span>•</span>
+            <a href="index.html#pdf" data-fr="PDF" data-en="PDF">PDF</a>
+        </nav>
+
+        <div class="nav-controls">
+            <button id="lang-toggle" class="control-btn" aria-label="Changer de langue">
+                <span id="lang-fr" class="lang-option active">FR</span>
+                <span class="lang-divider">|</span>
+                <span id="lang-en" class="lang-option">EN</span>
+            </button>
+            <button id="theme-toggle" class="control-btn theme-icon" aria-label="Changer de thème">⏾</button>
+        </div>
+    </header>
+
+    <!-- Zone de Scroll -->
+    <div class="scrolly-spacer" id="scrollySpacer">
+        
+        <!-- Scène Interactive -->
+        <main class="interactive-stage" id="stage1">
+            <div class="scene-container" id="sceneContainer">
+                
+                <!-- Dossier central -->
+                <div class="folder-wrapper" id="folderWrapper">
+                    <img src="dossier_rose.png" alt="Ouvrir le dossier" class="folder-img" id="folderMainImg">
+                    <span class="folder-label" data-fr="ouvrez-moi" data-en="open me">ouvrez-moi</span>
+                </div>
+
+                <!-- Texte d'accueil -->
+                <div class="item-text-greeting desk-item" id="itemGreeting" data-top="22" data-left="15">
+                    <span class="txt-bonjour" data-fr="Bonjour !" data-en="Hello !">Bonjour !</span>
+                    <span class="txt-jesuis" data-fr="je suis..." data-en="I am...">je suis...</span>
+                </div>
+
+                <!-- Élément Dossier (Agrandit) -->
+                <img src="dossier.png" alt="Dossier" class="desk-item item-dossier" id="itemDossier"
+                     data-top="50" data-left="20"
+                     data-img-fr-light="dossier.png" data-img-fr-dark="dossierblack.png"
+                     data-img-en-light="dossieranglais.png" data-img-en-dark="dossierblackanglais.png">
+
+                <!-- À propos de moi -->
+                <img src="propos.png" alt="À propos de moi" class="desk-item item-propos shadow-light" id="itemPropos"
+                     data-top="78" data-left="18"
+                     data-img-fr-light="propos.png" data-img-fr-dark="proposblack.png"
+                     data-img-en-light="proposanglais.png" data-img-en-dark="proposblackanglais.png">
+
+                <!-- Groupe Photo + Compétences -->
+                <div class="desk-item item-photo-group" id="itemPhotoGroup" data-top="54" data-left="50">
+                    <img src="photo.png" alt="Éléa Mayor" class="photo-img" id="itemPhoto"
+                         data-img-fr-light="photo.png" data-img-fr-dark="photoblack.png"
+                         data-img-en-light="photoanglais.png" data-img-en-dark="photoblackanglais.png">
+
+                    <img src="competences.png" alt="Compétences" class="competences-overlay" id="itemCompetences"
+                         data-img-fr-light="competences.png" data-img-fr-dark="competencesblack.png"
+                         data-img-en-light="competencesanglais.png" data-img-en-dark="competencesblackanglais.png">
+                </div>
+
+                <!-- Expériences & Contact -->
+                <img src="experiences.png" alt="Expériences" class="desk-item item-experiences shadow-light" id="itemExperiences"
+                     data-top="40" data-left="82"
+                     data-img-fr-light="experiences.png" data-img-fr-dark="experiencesblack.png"
+                     data-img-en-light="experiencesanglais.png" data-img-en-dark="experiencesblackanglais.png">
+
+                <img src="contact.png" alt="Contact" class="desk-item item-contact" id="itemContact"
+                     data-top="86" data-left="80"
+                     data-img-fr-light="contact.png" data-img-fr-dark="contactblack.png"
+                     data-img-en-light="contactanglais.png" data-img-en-dark="contactblackanglais.png">
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Zone 2 : Cartes Passions & Portfolio -->
+    <section class="passions-section" id="passionsSection">
+        <h2 class="passions-title">
+            <span class="symbol-color">˖᯽ ݁˖</span> 
+            <span data-fr="Mes passions" data-en="My passions">Mes passions</span> 
+            <span class="symbol-color">˖᯽ ݁˖</span>
+        </h2>
+
+        <div class="cards-container">
+            <!-- Carte 1 -->
+            <div class="flip-card passion-card" id="card1">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="carte_photo_recto.png" alt="Photographie" class="card-img"
+                             data-img-fr-light="carte_photo_recto.png" data-img-fr-dark="carte_photo_recto_black.png"
+                             data-img-en-light="carte_photo_recto_en.png" data-img-en-dark="carte_photo_recto_black_en.png">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="carte_photo_verso.png" alt="Détails Photo" class="card-img"
+                             data-img-fr-light="carte_photo_verso.png" data-img-fr-dark="carte_photo_verso_black.png"
+                             data-img-en-light="carte_photo_verso_en.png" data-img-en-dark="carte_photo_verso_black_en.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="flip-card passion-card" id="card2">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="carte_voyages_recto.png" alt="Voyages" class="card-img"
+                             data-img-fr-light="carte_voyages_recto.png" data-img-fr-dark="carte_voyages_recto_black.png"
+                             data-img-en-light="carte_voyages_recto_en.png" data-img-en-dark="carte_voyages_recto_black_en.png">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="carte_voyages_verso.png" alt="Détails Voyages" class="card-img"
+                             data-img-fr-light="carte_voyages_verso.png" data-img-fr-dark="carte_voyages_verso_black.png"
+                             data-img-en-light="carte_voyages_verso_en.png" data-img-en-dark="carte_voyages_verso_black_en.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="flip-card passion-card" id="card3">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="carte_dessins_recto.png" alt="Dessins" class="card-img"
+                             data-img-fr-light="carte_dessins_recto.png" data-img-fr-dark="carte_dessins_recto_black.png"
+                             data-img-en-light="carte_dessins_recto_en.png" data-img-en-dark="carte_dessins_recto_black_en.png">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="carte_dessins_verso.png" alt="Détails Dessins" class="card-img"
+                             data-img-fr-light="carte_dessins_verso.png" data-img-fr-dark="carte_dessins_verso_black.png"
+                             data-img-en-light="carte_dessins_verso_en.png" data-img-en-dark="carte_dessins_verso_black_en.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 4 -->
+            <div class="flip-card passion-card" id="card4">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="carte_streaming_recto.png" alt="Streaming" class="card-img"
+                             data-img-fr-light="carte_streaming_recto.png" data-img-fr-dark="carte_streaming_recto_black.png"
+                             data-img-en-light="carte_streaming_recto_en.png" data-img-en-dark="carte_streaming_recto_black_en.png">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="carte_streaming_verso.png" alt="Détails Streaming" class="card-img"
+                             data-img-fr-light="carte_streaming_verso.png" data-img-fr-dark="carte_streaming_verso_black.png"
+                             data-img-en-light="carte_streaming_verso_en.png" data-img-en-dark="carte_streaming_verso_black_en.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 5 -->
+            <div class="flip-card passion-card" id="card5">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="carte_lecture_recto.png" alt="Lecture" class="card-img"
+                             data-img-fr-light="carte_lecture_recto.png" data-img-fr-dark="carte_lecture_recto_black.png"
+                             data-img-en-light="carte_lecture_recto_en.png" data-img-en-dark="carte_lecture_recto_black_en.png">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="carte_lecture_verso.png" alt="Détails Lecture" class="card-img"
+                             data-img-fr-light="carte_lecture_verso.png" data-img-fr-dark="carte_lecture_verso_black.png"
+                             data-img-en-light="carte_lecture_verso_en.png" data-img-en-dark="carte_lecture_verso_black_en.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-cta">
+            <a href="index.html#pdf" class="btn-portfolio" data-fr="Continuer vers le portfolio" data-en="Continue to portfolio">Continuer vers le portfolio</a>
+        </div>
+    </section>
+
+    <script>
+        // --- DOM Elements ---
+        const folderWrapper = document.getElementById('folderWrapper');
+        const folderMainImg = document.getElementById('folderMainImg');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const langToggleBtn = document.getElementById('lang-toggle');
+        const langFr = document.getElementById('lang-fr');
+        const langEn = document.getElementById('lang-en');
+        const deskItems = document.querySelectorAll('.desk-item');
+
+        // --- Récupération des préférences sauvegardées ---
+        let isDarkMode = localStorage.getItem('theme') === 'dark';
+        let currentLang = localStorage.getItem('lang') || 'fr';
+        let isOpen = false;
+
+        // --- Application initiale ---
+        function applySavedSettings() {
+            // Appliquer Thème
+            if (isDarkMode) {
+                document.body.classList.add('dark-mode');
+                themeToggleBtn.textContent = '☀︎';
+            } else {
+                document.body.classList.remove('dark-mode');
+                themeToggleBtn.textContent = '⏾';
+            }
+
+            // Appliquer Langue
+            langEn.classList.toggle('active', currentLang === 'en');
+            langFr.classList.toggle('active', currentLang === 'fr');
+            translatePage();
+
+            // Mettre à jour les images
+            updateImages();
+        }
+
+        // --- Traduction des éléments ---
+        function translatePage() {
+            document.querySelectorAll('[data-fr]').forEach(el => {
+                const translation = el.getAttribute(`data-${currentLang}`);
+                if (translation) {
+                    if (el.children.length === 0) {
+                        el.textContent = translation;
+                    } else {
+                        const firstText = Array.from(el.childNodes).find(node => node.nodeType === Node.TEXT_NODE);
+                        if (firstText) firstText.nodeValue = translation;
+                    }
+                }
+            });
+        }
+
+        // --- Mise à jour dynamique des images ---
+        function updateImages() {
+            if (folderMainImg) {
+                folderMainImg.src = isDarkMode ? 'dossier_jaune.png' : 'dossier_rose.png';
+            }
+
+            const dynamicImages = document.querySelectorAll('[data-img-fr-light]');
+            dynamicImages.forEach(img => {
+                const attrName = `data-img-${currentLang}-${isDarkMode ? 'dark' : 'light'}`;
+                const newSrc = img.getAttribute(attrName);
+                if (newSrc) img.src = newSrc;
+            });
+        }
+
+        // --- Ouverture du Dossier ---
+        folderWrapper.addEventListener('click', () => {
+            if (isOpen) return;
+            isOpen = true;
+            
+            document.body.classList.remove('scroll-locked');
+            folderWrapper.classList.add('folder-opening');
+
+            setTimeout(() => {
+                deskItems.forEach((el, index) => {
+                    setTimeout(() => {
+                        el.classList.add('visible');
+                    }, index * 100);
+                });
+            }, 300);
+        });
+
+        // --- Flip Cards (Cartes Passions) ---
+        document.querySelectorAll('.flip-card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('flipped');
+            });
+        });
+
+        // --- Animation Scrollytelling ---
+        window.addEventListener('scroll', () => {
+            if (!isOpen) return;
+
+            const scrollY = window.scrollY;
+            const spacerHeight = window.innerHeight * 1.5; 
+            let progress = Math.min(Math.max(scrollY / spacerHeight, 0), 1);
+
+            deskItems.forEach(el => {
+                if (el.classList.contains('visible')) {
+                    const origTop = parseFloat(el.getAttribute('data-top'));
+                    const origLeft = parseFloat(el.getAttribute('data-left'));
+
+                    const currentTop = origTop + (50 - origTop) * progress;
+                    const currentLeft = origLeft + (50 - origLeft) * progress;
+                    
+                    const scale = 1 - (progress * 0.85);
+                    const opacity = 1 - Math.pow(progress, 1.5);
+
+                    el.style.top = `${currentTop}%`;
+                    el.style.left = `${currentLeft}%`;
+                    el.style.transform = `translate(-50%, -50%) scale(${scale})`;
+                    el.style.opacity = opacity;
+                }
+            });
+
+            if (progress > 0.5) {
+                const folderOpacity = (progress - 0.5) * 2;
+                folderWrapper.classList.remove('folder-opening');
+                folderWrapper.style.opacity = folderOpacity;
+                folderWrapper.style.transform = `translate(-50%, -50%) scale(${1 + (progress - 0.5) * 0.4})`;
+            } else {
+                folderWrapper.style.opacity = 0;
+            }
+        });
+
+        // --- Intersection Observer ---
+        const passionsSection = document.getElementById('passionsSection');
+        if (passionsSection) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const cards = document.querySelectorAll('.passion-card');
+                        cards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.classList.add('card-visible');
+                            }, index * 180);
+                        });
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(passionsSection);
+        }
+
+        // --- Switch Thème & Sauvegarde ---
+        themeToggleBtn.addEventListener('click', () => {
+            isDarkMode = !isDarkMode;
+            document.body.classList.toggle('dark-mode', isDarkMode);
+            themeToggleBtn.textContent = isDarkMode ? '☀︎' : '⏾';
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            updateImages();
+        });
+
+        // --- Switch Langue & Sauvegarde ---
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            localStorage.setItem('lang', currentLang);
+            
+            langEn.classList.toggle('active', currentLang === 'en');
+            langFr.classList.toggle('active', currentLang === 'fr');
+
+            translatePage();
+            updateImages();
+        });
+
+        // Initialiser au chargement
+        applySavedSettings();
+    </script>
+</body>
+</html>

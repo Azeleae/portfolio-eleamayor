@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressions - Portfolio Éléa</title>
+    <!-- Polices Google Fonts : Montserrat & Figtree -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@700;800;900&family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="impression.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <a href="portfolio.html" class="home-icon" aria-label="Accueil">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+        </a>
+
+        <nav class="nav-links">
+            <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+            <span>•</span>
+            <a href="presentation.html" data-fr="Présentation" data-en="About">Présentation</a>
+            <span>•</span>
+            <a href="cv-video.html" data-fr="CV vidéo" data-en="Video Resume">CV vidéo</a>
+        </nav>
+
+        <div class="nav-controls">
+            <button id="lang-toggle" class="control-btn" aria-label="Changer de langue">
+                <span id="lang-fr" class="lang-option active">FR</span>
+                <span class="lang-divider">|</span>
+                <span id="lang-en" class="lang-option">EN</span>
+            </button>
+            <button id="theme-toggle" class="control-btn theme-icon" aria-label="Changer de thème">⏾</button>
+        </div>
+    </header>
+
+    <!-- Titre déroulant "impressions" -->
+    <div class="edition-title-container">
+        <div class="dropdown-header" id="dropdownToggle">
+            <h1 class="page-title">impressions</h1>
+            <span class="arrow-icon">▼</span>
+        </div>
+        
+        <ul class="dropdown-menu" id="dropdownMenu">
+            <li><a href="#print" data-fr="Print" data-en="Print">Print</a></li>
+            <li><a href="#flyers" data-fr="Flyers" data-en="Flyers">Flyers</a></li>
+        </ul>
+    </div>
+
+    <main class="impressions-content">
+        <!-- SECTION 1 : PRINT -->
+        <section class="category-section" id="print">
+            <h2 class="category-title" data-fr="Print" data-en="Print">Print</h2>
+            <div class="gallery-grid">
+                <!-- Posters -->
+                <div class="gallery-item"><img src="poster1.png" alt="Print 1" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="poster2.png" alt="Print 2" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="poster3.png" alt="Print 3" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="poster4.png" alt="Print 4" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="poster5.png" alt="Print 5" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="poster6.png" alt="Print 6" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="poster7.png" alt="Print 7" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="poster8.png" alt="Print 8" onerror="this.classList.add('img-error')"></div>
+                <!-- Illustrations -->
+                <div class="gallery-item"><img src="illustration1.png" alt="Print 9" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="illustration2.png" alt="Print 10" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="illustration3.png" alt="Print 11" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="illustration4.png" alt="Print 12" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="illustration5.png" alt="Print 13" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="illustration6.png" alt="Print 14" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="illustration7.png" alt="Print 15" onerror="this.classList.add('img-error')"></div>
+                <div class="gallery-item"><img src="illustration8.png" alt="Print 16" onerror="this.classList.add('img-error')"></div>
+            </div>
+        </section>
+
+        <!-- Ligne de séparation identique au Logofolio -->
+        <hr class="project-divider">
+
+        <!-- SECTION 2 : FLYERS -->
+        <section class="category-section" id="flyers">
+            <h2 class="category-title" data-fr="Flyers" data-en="Flyers">Flyers</h2>
+            
+            <!-- FLYER 1 -->
+            <div class="project-section">
+                <div class="project-layout">
+                    <div class="col-left">
+                        <h3 class="project-title">Faut-il être fou pour créer ?</h3>
+                        <p class="project-description" data-fr="Dans le cadre du projet Philomag, j’ai conçu un flyer A5 recto-verso autour de la question philosophique « Faut-il être fou pour créer ? ». J’ai joué sur le contraste entre un univers classique et une explosion de couleurs pour symboliser l’opposition entre les normes sociales et la liberté créative. L’objectif était de questionner les idées reçues sur la créativité à travers une composition graphique expressive et percutante." data-en="As part of the Philomag project, I designed a double-sided A5 flyer...">
+                            Dans le cadre du projet Philomag, j’ai conçu un flyer A5 recto-verso autour de la question philosophique « Faut-il être fou pour créer ? ». J’ai joué sur le contraste entre un univers classique et une explosion de couleurs pour symboliser l’opposition entre les normes sociales et la liberté créative. L’objectif était de questionner les idées reçues sur la créativité à travers une composition graphique expressive et percutante.
+                        </p>
+                        <div class="stars-left-container">
+                            <img src="etoiles_combinees.gif" alt="Étoiles" class="star-gif-combined">
+                        </div>
+                    </div>
+
+                    <div class="col-center transparent-bg-cover">
+                        <img src="flyer1.png" alt="Flyer Philomag" class="magazine-cover flyer-large-img" onerror="this.classList.add('img-error')">
+                    </div>
+
+                    <div class="col-right">
+                        <div class="star-top">
+                            <img src="etoile_contour.gif" alt="Étoile contour" class="star-gif-top">
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="software-tags">
+                                <img src="adobe_rose.png" alt="Logiciels Adobe" class="adobe-icons-img">
+                            </div>
+                            <span class="project-type" data-fr="Projet scolaire" data-en="School project">Projet scolaire</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="project-divider-sub">
+
+            <!-- FLYER 2 -->
+            <div class="project-section">
+                <div class="project-layout layout-reversed">
+                    <div class="col-left col-left-meta">
+                        <div class="star-top">
+                            <img src="etoile_contour.gif" alt="Étoile contour" class="star-gif-top">
+                        </div>
+                        <div class="project-info">
+                            <div class="software-tags">
+                                <img src="adobe_rose.png" alt="Logiciels Adobe" class="adobe-icons-img">
+                            </div>
+                            <span class="project-type" data-fr="Projet scolaire" data-en="School project">Projet scolaire</span>
+                        </div>
+                    </div>
+
+                    <div class="col-center">
+                        <img src="flyer2.png" alt="Flyer 2" class="magazine-cover flyer-large-img" onerror="this.src='https://via.placeholder.com/480x680/ff8fab/ffffff?text=Flyer+2'">
+                    </div>
+
+                    <div class="col-right col-right-text">
+                        <h3 class="project-title">Titre du Flyer 2</h3>
+                        <p class="project-description" data-fr="Description du second flyer..." data-en="Second flyer description...">
+                            Description ou informations concernant le deuxième flyer de votre projet.
+                        </p>
+                        <div class="stars-right-container">
+                            <img src="etoiles_combinees.gif" alt="Étoiles" class="star-gif-combined">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="project-divider-sub">
+
+            <!-- FLYER 3 -->
+            <div class="project-section">
+                <div class="project-layout">
+                    <div class="col-left">
+                        <h3 class="project-title">Titre du Flyer 3</h3>
+                        <p class="project-description" data-fr="Description du troisième flyer..." data-en="Third flyer description...">
+                            Description ou informations concernant le troisième flyer de votre projet.
+                        </p>
+                        <div class="stars-left-container">
+                            <img src="etoiles_combinees.gif" alt="Étoiles" class="star-gif-combined">
+                        </div>
+                    </div>
+
+                    <div class="col-center">
+                        <img src="flyer3.png" alt="Flyer 3" class="magazine-cover flyer-large-img" onerror="this.src='https://via.placeholder.com/480x680/ff8fab/ffffff?text=Flyer+3'">
+                    </div>
+
+                    <div class="col-right">
+                        <div class="star-top">
+                            <img src="etoile_contour.gif" alt="Étoile contour" class="star-gif-top">
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="software-tags">
+                                <img src="adobe_rose.png" alt="Logiciels Adobe" class="adobe-icons-img">
+                            </div>
+                            <span class="project-type" data-fr="Projet scolaire" data-en="School project">Projet scolaire</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bouton Retour au portfolio -->
+        <div class="back-button-container">
+            <a href="portfolio.html" class="back-btn" data-fr="retourner au portfolio" data-en="back to portfolio">retourner au portfolio</a>
+        </div>
+    </main>
+
+    <script>
+        // --- 1. Menu Déroulant ---
+        const dropdownToggle = document.getElementById('dropdownToggle');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        dropdownToggle.addEventListener('click', () => {
+            dropdownToggle.classList.toggle('active');
+            dropdownMenu.classList.toggle('open');
+        });
+
+        dropdownMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                dropdownToggle.classList.remove('active');
+                dropdownMenu.classList.remove('open');
+            });
+        });
+
+        // --- 2. Synchronisation Langue & Mode Sombre ---
+        const langToggleBtn = document.getElementById('lang-toggle');
+        const langFr = document.getElementById('lang-fr');
+        const langEn = document.getElementById('lang-en');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const translatableElements = document.querySelectorAll('[data-fr]');
+
+        function applyLanguage(lang) {
+            langEn.classList.toggle('active', lang === 'en');
+            langFr.classList.toggle('active', lang === 'fr');
+            translatableElements.forEach(el => {
+                el.textContent = el.getAttribute(`data-${lang}`);
+            });
+        }
+
+        function applyTheme(theme) {
+            const isDark = theme === 'dark';
+            document.body.classList.toggle('dark-mode', isDark);
+            themeToggleBtn.textContent = isDark ? '☀︎' : '⏾';
+
+            const starLeftGifs = document.querySelectorAll('.star-gif-combined');
+            const starTopGifs = document.querySelectorAll('.star-gif-top');
+            const adobeIcons = document.querySelectorAll('.adobe-icons-img');
+
+            starLeftGifs.forEach(img => img.src = isDark ? 'etoiles_combinees_jaune.gif' : 'etoiles_combinees.gif');
+            starTopGifs.forEach(img => img.src = isDark ? 'etoile_contour_jaune.gif' : 'etoile_contour.gif');
+            adobeIcons.forEach(img => img.src = isDark ? 'adobe_jaune.png' : 'adobe_rose.png');
+        }
+
+        let currentLang = localStorage.getItem('site_lang') || 'fr';
+        let currentTheme = localStorage.getItem('site_theme') || 'light';
+
+        applyLanguage(currentLang);
+        applyTheme(currentTheme);
+
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            localStorage.setItem('site_lang', currentLang);
+            applyLanguage(currentLang);
+        });
+
+        themeToggleBtn.addEventListener('click', () => {
+            currentTheme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
+            localStorage.setItem('site_theme', currentTheme);
+            applyTheme(currentTheme);
+        });
+    </script>
+</body>
+</html>

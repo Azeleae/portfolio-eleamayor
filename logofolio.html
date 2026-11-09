@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logofolio - Portfolio Éléa</title>
+    <!-- Polices Google Fonts : Montserrat & Figtree -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@700;800;900&family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="logofolio.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="portfolio.html" class="home-icon" aria-label="Accueil">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+        </a>
+
+        <nav class="nav-links">
+            <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+            <span>•</span>
+            <a href="presentation.html" data-fr="Présentation" data-en="About">Présentation</a>
+            <span>•</span>
+            <a href="cv-video.html" data-fr="CV vidéo" data-en="Video Resume">CV vidéo</a>
+        </nav>
+
+        <div class="nav-controls">
+            <button id="lang-toggle" class="control-btn" aria-label="Changer de langue">
+                <span id="lang-fr" class="lang-option active">FR</span>
+                <span class="lang-divider">|</span>
+                <span id="lang-en" class="lang-option">EN</span>
+            </button>
+            <button id="theme-toggle" class="control-btn theme-icon" aria-label="Changer de thème">⏾</button>
+        </div>
+    </header>
+
+    <!-- Titre déroulant -->
+    <div class="edition-title-container">
+        <div class="dropdown-header" id="dropdownToggle">
+            <h1 class="page-title">logofolio</h1>
+            <span class="arrow-icon">▼</span>
+        </div>
+        
+        <ul class="dropdown-menu" id="dropdownMenu">
+            <li><a href="#pomelo">POMELO</a></li>
+            <li><a href="#azeleae">AZELEAE</a></li>
+            <li><a href="#agence-cerise">AGENCE CERISE</a></li>
+            <li><a href="#elea-mayor">ELEA MAYOR</a></li>
+            <li><a href="#studio-elma">STUDIO ELMA</a></li>
+            <li><a href="#itinereves">ITINÉREVES</a></li>
+            <li><a href="#purgo">PUR'GO</a></li>
+            <li><a href="#tomo">TOMO</a></li>
+            <li><a href="#declik">DECLIK</a></li>
+        </ul>
+    </div>
+
+    <!-- ENCART COLORÉ -->
+    <section class="intro-banner">
+        <div class="intro-banner-flex">
+            <div class="intro-content">
+                <p data-fr="Je présente ici une sélection de logos imaginés pour des projets fictifs et réels. Chaque création explore un univers différent, avec une identité qui lui est propre, adaptée à son activité, son public et son style."
+                   data-en="Here I present a selection of logos designed for fictional and real projects. Each creation explores a different universe, with its own unique identity tailored to its activity, audience, and style.">
+                   Je présente ici une sélection de logos imaginés pour des projets fictifs et réels. Chaque création explore un univers différent, avec une identité qui lui est propre, adaptée à son activité, son public et son style.
+                </p>
+                <p data-fr="À travers ces réalisations, j’explore différentes approches graphiques, en jouant avec les formes, les couleurs, les typographies et les symboles pour donner vie à des identités singulières. Chaque logo est une occasion d’expérimenter, de développer mon regard créatif et de traduire une idée en une création visuelle cohérente."
+                   data-en="Through these achievements, I explore different graphic approaches, playing with shapes, colors, typography, and symbols to bring singular identities to life. Each logo is an opportunity to experiment, develop my creative vision, and translate an idea into a coherent visual creation.">
+                   À travers ces réalisations, j’explore différentes approches graphiques, en jouant avec les formes, les couleurs, les typographies et les symboles pour donner vie à des identités singulières. Chaque logo est une occasion d’expérimenter, de développer mon regard créatif et de traduire une idée en une création visuelle cohérente.
+                </p>
+                <p data-fr="Ce portfolio rassemble mes recherches et mes expérimentations autour du logo, de sa lisibilité à sa simplicité. J’aime trouver le juste équilibre entre originalité et clarté, afin de créer des signes visuels reconnaissables, capables de représenter un univers tout en conservant leur force dans leur forme la plus épurée."
+                   data-en="This portfolio brings together my research and experimentation around the logo, from its legibility to its simplicity. I like finding the right balance between originality and clarity, in order to create recognizable visual signs capable of representing a universe while retaining their strength in their purest form.">
+                   Ce portfolio rassemble mes recherches et mes expérimentations autour du logo, de sa lisibilité à sa simplicité. J’aime trouver le juste équilibre entre originalité et clarté, afin de créer des signes visuels reconnaissables, capables de représenter un univers tout en conservant leur force dans leur forme la plus épurée.
+                </p>
+            </div>
+            <div class="intro-image-container">
+                <img src="logoquicourt.png" alt="Logo qui court" class="logo-quicourt-img" onerror="this.src='https://via.placeholder.com/380x380/ffffff/222222?text=Logo+qui+court'">
+            </div>
+        </div>
+    </section>
+
+    <!-- BANDEAU DÉFILANT CONTINU -->
+    <div class="logos-marquee-container">
+        <div class="logos-track" id="logosTrack">
+            <div class="marquee-item" onclick="toggleProjectContent('pomelo')"><img src="pomelo.png" alt="Logo Pomelo"></div>
+            <div class="marquee-item" onclick="toggleProjectContent('azeleae')"><img src="azeleae.png" alt="Logo Azeleae"></div>
+            <div class="marquee-item" onclick="toggleProjectContent('agence-cerise')"><img src="agence_cerise.png" alt="Logo Agence Cerise"></div>
+            <div class="marquee-item" onclick="toggleProjectContent('elea-mayor')"><img src="elea_mayor.png" alt="Logo Elea Mayor"></div>
+            <div class="marquee-item" onclick="toggleProjectContent('studio-elma')"><img src="studio_elma.png" alt="Logo Studio Elma" class="marquee-logo-elma"></div>
+            <div class="marquee-item" onclick="toggleProjectContent('itinereves')"><img src="itinereves.png" alt="Logo Itinéreves"></div>
+            <div class="marquee-item" onclick="toggleProjectContent('purgo')"><img src="purgo.png" alt="Logo Pur'go"></div>
+            <div class="marquee-item" onclick="toggleProjectContent('tomo')"><img src="tomo.png" alt="Logo Tomo"></div>
+            <div class="marquee-item" onclick="toggleProjectContent('declik')"><img src="declik.png" alt="Logo Declik"></div>
+        </div>
+    </div>
+
+    <!-- Barre rose/jaune -->
+    <hr class="project-divider">
+
+    <!-- MAIN CONTAINER -->
+    <main class="logofolio-container">
+
+        <!-- 1. POMELO -->
+        <section class="logo-template-block" id="pomelo" onclick="toggleProjectContent('pomelo')">
+            <div class="corner-text top-left">01.</div>
+            <div class="corner-text top-right" data-fr="Identité visuelle" data-en="Visual identity">Identité visuelle</div>
+            
+            <div class="template-center-content" id="content-pomelo">
+                <div class="template-center-logo">
+                    <img src="pomelo.png" alt="Logo Pomelo" onerror="this.src='https://via.placeholder.com/400x180/ffffff/222222?text=POMELO'">
+                </div>
+            </div>
+
+            <div class="corner-text bottom-left">Agence Pomelo</div>
+            <div class="corner-text bottom-right">2025</div>
+        </section>
+
+        <hr class="project-divider">
+
+        <!-- 2. AZELEAE -->
+        <section class="logo-template-block" id="azeleae" onclick="toggleProjectContent('azeleae')">
+            <div class="corner-text top-left">02.</div>
+            <div class="corner-text top-right" data-fr="Marque de cosmétiques" data-en="Cosmetics brand">Marque de cosmétiques</div>
+            
+            <div class="template-center-content" id="content-azeleae">
+                <div class="template-center-logo">
+                    <img src="azeleae.png" alt="Logo Azeleae" onerror="this.src='https://via.placeholder.com/400x180/ffffff/222222?text=AZELEAE'">
+                </div>
+            </div>
+
+            <div class="corner-text bottom-left">Azeleae</div>
+            <div class="corner-text bottom-right">2025</div>
+        </section>
+
+        <hr class="project-divider">
+
+        <!-- 3. AGENCE CERISE -->
+        <section class="logo-template-block" id="agence-cerise" onclick="toggleProjectContent('agence-cerise')">
+            <div class="corner-text top-left">03.</div>
+            <div class="corner-text top-right" data-fr="Agence créative" data-en="Creative agency">Agence créative</div>
+            
+            <div class="template-center-content" id="content-agence-cerise">
+                <div class="template-center-logo">
+                    <img src="agence_cerise.png" alt="Logo Agence Cerise" onerror="this.src='https://via.placeholder.com/400x180/ffffff/222222?text=AGENCE+CERISE'">
+                </div>
+            </div>
+
+            <div class="corner-text bottom-left">Agence Cerise</div>
+            <div class="corner-text bottom-right">2025</div>
+        </section>
+
+        <hr class="project-divider">
+
+        <!-- 4. ELEA MAYOR -->
+        <section class="logo-template-block" id="elea-mayor" onclick="toggleProjectContent('elea-mayor')">
+            <div class="corner-text top-left">04.</div>
+            <div class="corner-text top-right" data-fr="Branding personnel" data-en="Personal branding">Branding personnel</div>
+            
+            <div class="template-center-content" id="content-elea-mayor">
+                <div class="template-center-logo">
+                    <img src="elea_mayor.png" alt="Logo Elea Mayor" class="logo-small" onerror="this.src='https://via.placeholder.com/400x180/ffffff/222222?text=ELEA+MAYOR'">
+                </div>
+            </div>
+
+            <div class="corner-text bottom-left">Elea Mayor</div>
+            <div class="corner-text bottom-right">2026</div>
+        </section>
+
+        <hr class="project-divider">
+
+        <!-- 5. STUDIO ELMA -->
+        <section class="logo-template-block" id="studio-elma" onclick="toggleProjectContent('studio-elma')">
+            <div class="corner-text top-left">05.</div>
+            <div class="corner-text top-right" data-fr="Studio de design" data-en="Design studio">Studio de design</div>
+            
+            <div class="template-center-content" id="content-studio-elma">
+                <div class="template-center-logo">
+                    <img src="studio_elma.png" alt="Logo Studio Elma" class="logo-small" onerror="this.src='https://via.placeholder.com/400x180/ffffff/222222?text=STUDIO+ELMA'">
+                </div>
+            </div>
+
+            <div class="corner-text bottom-left">Studio Elma</div>
+            <div class="corner-text bottom-right">2025</div>
+        </section>
+
+        <hr class="project-divider">
+
+        <!-- 6. ITINÉREVES -->
+        <section class="logo-template-block" id="itinereves" onclick="toggleProjectContent('itinereves')">
+            <div class="corner-text top-left">06.</div>
+            <div class="corner-text top-right" data-fr="Projet touristique" data-en="Tourism project">Projet touristique</div>
+            
+            <div class="template-center-content" id="content-itinereves">
+                <div class="template-center-logo">
+                    <img src="itinereves.png" alt="Logo Itinéreves" class="logo-small" onerror="this.src='https://via.placeholder.com/400x180/ffffff/222222?text=ITINEREVES'">
+                </div>
+            </div>
+
+            <div class="corner-text bottom-left">Itinéreves</div>
+            <div class="corner-text bottom-right">2024</div>
+        </section>
+
+        <hr class="project-divider">
+
+        <!-- 7. PUR'GO -->
+        <section class="logo-template-block" id="purgo" onclick="toggleProjectContent('purgo')">
+            <div class="corner-text top-left">07.</div>
+            <div class="corner-text top-right" data-fr="Branding & Produit" data-en="Branding & Product">Branding & Produit</div>
+            
+            <div class="template-center-content" id="content-purgo">
+                <div class="template-center-logo">
+                    <img src="purgo.png" alt="Logo Pur'go" onerror="this.src='https://via.placeholder.com/400x180/ffffff/222222?text=PUR\'GO'">
+                </div>
+            </div>
+
+            <div class="corner-text bottom-left">Pur'go</div>
+            <div class="corner-text bottom-right">2024</div>
+        </section>
+
+        <hr class="project-divider">
+
+        <!-- 8. TOMO -->
+        <section class="logo-template-block" id="tomo" onclick="toggleProjectContent('tomo')">
+            <div class="corner-text top-left">08.</div>
+            <div class="corner-text top-right" data-fr="Application de randonnée" data-en="Hiking application">Application de randonnée</div>
+            
+            <div class="template-center-content" id="content-tomo">
+                <div class="template-center-logo">
+                    <img src="tomo.png" alt="Logo Tomo" onerror="this.src='https://via.placeholder.com/400x180/ffffff/222222?text=TOMO'">
+                </div>
+            </div>
+
+            <div class="corner-text bottom-left">Tomo</div>
+            <div class="corner-text bottom-right">2026</div>
+        </section>
+
+        <hr class="project-divider">
+
+        <!-- 9. DECLIK -->
+        <section class="logo-template-block" id="declik" onclick="toggleProjectContent('declik')">
+            <div class="corner-text top-left">09.</div>
+            <div class="corner-text top-right" data-fr="Agence de communication" data-en="Communication agency">Agence de communication</div>
+            
+            <div class="template-center-content" id="content-declik">
+                <div class="template-center-logo">
+                    <img src="declik.png" alt="Logo Declik" onerror="this.src='https://via.placeholder.com/400x180/ffffff/222222?text=DECLIK'">
+                </div>
+            </div>
+
+            <div class="corner-text bottom-left">Declik</div>
+            <div class="corner-text bottom-right">2026</div>
+        </section>
+
+    </main>
+
+    <!-- Barre de séparation avant le regroupement -->
+    <hr class="project-divider">
+
+    <!-- GRILLE RÉCAPITULATIVE DE FIN DE PAGE -->
+    <section class="all-logos-grid-section">
+        <div class="all-logos-grid">
+            <div class="grid-logo-item" onclick="toggleProjectContent('pomelo')"><img src="pomelo.png" alt="Pomelo"></div>
+            <div class="grid-logo-item" onclick="toggleProjectContent('azeleae')"><img src="azeleae.png" alt="Azeleae"></div>
+            <div class="grid-logo-item" onclick="toggleProjectContent('agence-cerise')"><img src="agence_cerise.png" alt="Agence Cerise"></div>
+            <div class="grid-logo-item" onclick="toggleProjectContent('elea-mayor')"><img src="elea_mayor.png" alt="Elea Mayor"></div>
+            <div class="grid-logo-item" onclick="toggleProjectContent('studio-elma')"><img src="studio_elma.png" alt="Studio Elma"></div>
+            <div class="grid-logo-item" onclick="toggleProjectContent('itinereves')"><img src="itinereves.png" alt="Itinéreves"></div>
+            <div class="grid-logo-item" onclick="toggleProjectContent('purgo')"><img src="purgo.png" alt="Pur'go"></div>
+            <div class="grid-logo-item" onclick="toggleProjectContent('tomo')"><img src="tomo.png" alt="Tomo"></div>
+            <div class="grid-logo-item" onclick="toggleProjectContent('declik')"><img src="declik.png" alt="Declik"></div>
+        </div>
+    </section>
+
+    <script>
+        // Données des projets (briefs et explications)
+        const projectsData = {
+            'pomelo': {
+                title: 'Pomelo',
+                img: 'pomelo.png',
+                desc: 'Brief : Création d’une identité visuelle fraîche et fruitée pour une agence moderne. Le logo mise sur la simplicité géométrique et des teintes vibrantes pour inspirer le dynamisme et la créativité.'
+            },
+            'azeleae': {
+                title: 'Azeleae',
+                img: 'azeleae.png',
+                desc: 'Brief : Conception d’un logo élégant et épuré pour une marque de cosmétiques haut de gamme. L’accent a été mis sur la délicatesse des lignes et une typographie raffinée.'
+            },
+            'agence-cerise': {
+                title: 'Agence Cerise',
+                img: 'agence_cerise.png',
+                desc: 'Brief : Développement d’une identité visuelle pétillante pour une agence créative. Un design unique qui associe modernité et audace graphique.'
+            },
+            'elea-mayor': {
+                title: 'Elea Mayor',
+                img: 'elea_mayor.png',
+                desc: 'Brief : Refonte du branding personnel. Un logotype intemporel et professionnel qui reflète la personnalité artistique et structurée de la créatrice.'
+            },
+            'studio-elma': {
+                title: 'Studio Elma',
+                img: 'studio_elma.png',
+                desc: 'Brief : Création d’un univers minimaliste pour un studio de design. Le signe visuel privilégie l’espace, l’équilibre et la rigueur architecturale.'
+            },
+            'itinereves': {
+                title: 'Itinéreves',
+                img: 'itinereves.png',
+                desc: 'Brief : Conception graphique pour un projet touristique axé sur l’évasion. Le logo évoque subtilement le voyage, le mouvement et la découverte.'
+            },
+            'purgo': {
+                title: "Pur'go",
+                img: 'purgo.png',
+                desc: "Brief : Branding axé sur la pureté et le bien-être. Utilisation de formes fluides et d'une typographie douce pour rassurer et inspirer la transparence."
+            },
+            'tomo': {
+                title: 'Tomo',
+                img: 'tomo.png',
+                desc: 'Brief : Identité visuelle pour une application de randonnée. Le logo combine la robustesse de la nature et la simplicité d’un repère cartographique.'
+            },
+            'declik': {
+                title: 'Declik',
+                img: 'declik.png',
+                desc: 'Brief : Création d’un logotype percutant pour une agence de communication. L’idée repose sur l’étincelle de la créativité et l’impact instantané.'
+            }
+        };
+
+        // Fonction pour alterner entre le logo et le texte d'explication directement dans le bloc
+        function toggleProjectContent(projectId) {
+            const project = projectsData[projectId];
+            if (!project) return;
+
+            const contentContainer = document.getElementById('content-' + projectId);
+            const isShowingText = contentContainer.getAttribute('data-state') === 'text';
+
+            if (isShowingText) {
+                // Revenir au logo initial
+                contentContainer.innerHTML = `
+                    <div class="template-center-logo">
+                        <img src="${project.img}" alt="${project.title}" onerror="this.src='https://via.placeholder.com/400x180/ffffff/222222?text=${project.title}'">
+                    </div>
+                `;
+                contentContainer.setAttribute('data-state', 'logo');
+            } else {
+                // Afficher le texte explicatif à la place du logo
+                contentContainer.innerHTML = `
+                    <div class="template-description-box">
+                        <h3>${project.title}</h3>
+                        <p>${project.desc}</p>
+                    </div>
+                `;
+                contentContainer.setAttribute('data-state', 'text');
+            }
+
+            // Faire défiler doucement la vue vers le bloc cliqué si nécessaire
+            document.getElementById(projectId).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Duplication automatique du contenu du bandeau pour une boucle infinie parfaite
+        const track = document.getElementById('logosTrack');
+        track.innerHTML += track.innerHTML;
+
+        // Menu Déroulant
+        const dropdownToggle = document.getElementById('dropdownToggle');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        dropdownToggle.addEventListener('click', () => {
+            dropdownToggle.classList.toggle('active');
+            dropdownMenu.classList.toggle('open');
+        });
+
+        // Fermer le menu si clic à l'extérieur
+        document.addEventListener('click', (e) => {
+            if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownToggle.classList.remove('active');
+                dropdownMenu.classList.remove('open');
+            }
+        });
+
+        // Langue FR/EN & Thème sombre
+        const langToggleBtn = document.getElementById('lang-toggle');
+        const langFr = document.getElementById('lang-fr');
+        const langEn = document.getElementById('lang-en');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const translatableElements = document.querySelectorAll('[data-fr]');
+
+        function applyLanguage(lang) {
+            langEn.classList.toggle('active', lang === 'en');
+            langFr.classList.toggle('active', lang === 'fr');
+            translatableElements.forEach(el => {
+                el.textContent = el.getAttribute(`data-${lang}`);
+            });
+        }
+
+        function applyTheme(theme) {
+            const isDark = theme === 'dark';
+            document.body.classList.toggle('dark-mode', isDark);
+            themeToggleBtn.textContent = isDark ? '☀︎' : '⏾';
+        }
+
+        let currentLang = localStorage.getItem('site_lang') || 'fr';
+        let currentTheme = localStorage.getItem('site_theme') || 'light';
+
+        applyLanguage(currentLang);
+        applyTheme(currentTheme);
+
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            localStorage.setItem('site_lang', currentLang);
+            applyLanguage(currentLang);
+        });
+
+        themeToggleBtn.addEventListener('click', () => {
+            currentTheme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
+            localStorage.setItem('site_theme', currentTheme);
+            applyTheme(currentTheme);
+        });
+        
+    </script>
+</body>
+</html>
